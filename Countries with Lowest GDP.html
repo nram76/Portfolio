@@ -35,12 +35,12 @@
                                          <p></p>
 										<h2 class="major">Queries Executed</h2>
 										<pre>
-                                            -- Seeing the Bottom 5 on the GDP market in 2016
-                                            SELECT TOP 5 [Country Name], Year, 
-                                            CAST(Value AS FLOAT) AS GDP
-                                            FROM GDP1
-                                            WHERE Year like '2016'
-                                            ORDER BY Value 
+-- Seeing the Bottom 5 on the GDP market in 2016
+SELECT TOP 5 [Country Name], Year, 
+CAST(Value AS FLOAT) AS GDP
+FROM GDP1
+WHERE Year like '2016'
+ORDER BY Value 
 											
 									</div>
 								</div>
