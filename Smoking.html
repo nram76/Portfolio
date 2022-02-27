@@ -35,19 +35,19 @@
                                          <p></p>
 										<h2 class="major">Queries Executed</h2>
 										<pre>
-                                            -- Seeing the current GDP market
-                                            SELECT [Country Name], Year, 
-                                            CAST(Value AS DECIMAL(20,2)) AS GDP
-                                            FROM GDP1
-                                            WHERE Year like '2016'
-                                            ORDER BY [Country Name]
+-- Seeing the current GDP market
+SELECT [Country Name], Year, 
+CAST(Value AS DECIMAL(20,2)) AS GDP
+FROM GDP1
+WHERE Year like '2016'
+ORDER BY [Country Name]
                                             
-                                            -- Seeing Trend of the EU on the GDP market 
-                                            SELECT [Country Name], Year, 
-                                            CAST(Value AS DECIMAL(30,2)) AS GDP
-                                            FROM GDP1
-                                            WHERE [Country Code] like 'EUU'
-                                            ORDER BY Year 
+ -- Seeing Trend of the EU on the GDP market 
+SELECT [Country Name], Year, 
+CAST(Value AS DECIMAL(30,2)) AS GDP
+FROM GDP1
+WHERE [Country Code] like 'EUU'
+ORDER BY Year 
 										</pre>
 											
 									</div>
