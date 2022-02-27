@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+		<title>Smoking</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							
+							<h2>Smoking</h2>
+							<p>The Correlation of Smoking among the Sexes</p>
+						</div>
+					</section>
+            <!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<div class="content">
+                                        <article>
+                                        <h3 class="major">Power Bi Graph</h3>
+                                        <img src="images/SmokeFull.PNG" width="900" height="500"alt="" /></img>
+                                         </article>
+                                         <p></p>
+										<h2 class="major">Queries Executed</h2>
+										<pre>
+                                            -- Seeing the current GDP market
+                                            SELECT [Country Name], Year, 
+                                            CAST(Value AS DECIMAL(20,2)) AS GDP
+                                            FROM GDP1
+                                            WHERE Year like '2016'
+                                            ORDER BY [Country Name]
+                                            
+                                            -- Seeing Trend of the EU on the GDP market 
+                                            SELECT [Country Name], Year, 
+                                            CAST(Value AS DECIMAL(30,2)) AS GDP
+                                            FROM GDP1
+                                            WHERE [Country Code] like 'EUU'
+                                            ORDER BY Year 
+										</pre>
+											
+									</div>
+								</div>
+							</section>
+                            <a href="index.html" class="special">Back Home</a>
+                    </section>
+            </div>
+
+            <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>

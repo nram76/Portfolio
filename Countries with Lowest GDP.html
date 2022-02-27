@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+		<title>Smoking</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							
+							<h2>Lowest GDP</h2>
+							<p>Five Countries with the Lowest GDP</p>
+						</div>
+					</section>
+            <!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<div class="content">
+                                        <article>
+                                        <h3 class="major">Power Bi Graph</h3>
+                                        <img src="images/LowGDP.PNG" width="900" height="500"alt="" /></img>
+                                         </article>
+                                         <p></p>
+										<h2 class="major">Queries Executed</h2>
+										<pre>
+                                            -- Seeing the Bottom 5 on the GDP market in 2016
+                                            SELECT TOP 5 [Country Name], Year, 
+                                            CAST(Value AS FLOAT) AS GDP
+                                            FROM GDP1
+                                            WHERE Year like '2016'
+                                            ORDER BY Value 
+											
+									</div>
+								</div>
+							</section>
+                            <a href="index.html" class="special">Back Home</a>
+                    </section>
+            </div>
+
+            <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>
