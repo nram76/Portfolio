@@ -71,7 +71,7 @@
 								<div class="inner">
 									
 									<h2>Contact Me</h2>
-									<p>Software Engineer from West Chester University</p>
+									<p>Let's Connect</p>
 								</div>
 							</section>
 
@@ -80,21 +80,25 @@
 							action="https://formspree.io/f/xzbqqjaj"
 							method="POST"
 							style="width: 60%; margin:auto;"
+							id="form"
+							name="form"
 						 	 >
 							<label>
 							  Your email:
-							  <input type="email" name="email">
+							  <input type="email" name="email" id="email">
 							</label>
 							<label>
 								Subject:
-								<input type="text" name="subject">
+								<input type="text" name="subject" id="sunject">
 							  </label>
 							<label>
 							  Your message:
-							  <textarea name="message" style="min-height: 200px;"></textarea>
+							  <textarea name="message" id="message" style="min-height: 200px;"></textarea>
 							</label>
 							<!-- your other form fields go here -->
 							<button type="submit">Send</button>
+							<button type="reset" onclick="reset()">Clear Form</button>
+
 						  </form>
 							<!-- end of input -->
 							<ul class="contact"
