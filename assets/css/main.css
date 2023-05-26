@@ -2668,7 +2668,7 @@ input, select, textarea {
 
 		ul.contact li {
 			text-decoration: none;
-			margin: 0 0 0 0;
+			margin: 2em 0 2em 0;
 			padding: 0 0 0 3.25em;
 			position: relative;
 		}
@@ -2700,9 +2700,7 @@ input, select, textarea {
 				width: 2.5em;
 			}
 
-			ul.contact li:first-child {
-				margin-top: 0;
-			}
+
 
 		@media screen and (max-width: 736px) {
 
